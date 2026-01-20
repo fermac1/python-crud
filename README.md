@@ -11,7 +11,7 @@ It is intentionally simple and framework-free to focus on fundamentals.
 
 ---
 
-## 📌 Project Purpose
+## Project Purpose
 
 This project was created to help learn and practice:
 
