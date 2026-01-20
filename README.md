@@ -9,7 +9,6 @@ The project uses:
 
 It is intentionally simple and framework-free to focus on fundamentals.
 
----
 
 ## Project Purpose
 
@@ -21,5 +20,3 @@ This project was created to help learn and practice:
 - Basic object-oriented programming (OOP)
 - CRUD operations
 - File handling with JSON
-
----
