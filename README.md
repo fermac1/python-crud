@@ -20,3 +20,23 @@ This project was created to help learn and practice:
 - Basic object-oriented programming (OOP)
 - CRUD operations
 - File handling with JSON
+
+## Features
+- Create new records
+- Read existing records
+- Update existing records
+- Delete records
+
+## Getting Started
+
+### Prerequisites
+- Python
+- no external library required
+
+### Run the Project
+
+```bash
+
+   python main.py
+   
+```
