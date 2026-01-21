@@ -37,6 +37,5 @@ This project was created to help learn and practice:
 
 ```bash
 
-   python main.py
-   
+python main.py
 ```
