@@ -1,12 +1,12 @@
 from services.user_service import (
-    get_all_users, get_user_by_id, create_user, save_users
+    get_all_users, get_user_by_id, create_user, update_user
 )
 
 def menu():
     print('1. Get all users')
     print('2. Get user by id')
     print('3. Create user')
-    # print('4. Save user')
+    print('4. Update user')
     print('5. Exit')
 
 while True:
@@ -32,10 +32,15 @@ while True:
         user = create_user(name, email)
         print('user created successfully: ', user.to_dict())
     
-    # elif option == "4":
-    #     user_id = input('Enter user id: ')
-    #     user = get_user_by_id(user_id)
-    #     save_users(user)
+    elif option == "4":
+        user_id = int(input('Enter user id: '))
+        name = input('Enter name: ')
+        email = input('Enter email: ')
+        user = update_user(user_id, name or None, email or None)
+        if user:
+            print('user updated successfully: ', user)
+        else:
+            print('User not found')
     
     elif option == "5":
         break

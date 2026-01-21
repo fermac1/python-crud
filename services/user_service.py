@@ -44,3 +44,15 @@ def create_user(name, email):
     save_users(users)
 
     return user
+
+# update user
+def update_user(user_id, name=None, email=None):
+    users = get_all_users()
+    for user in users:
+        if user['id'] == user_id:
+            user['name'] = name
+            user['email'] = email
+            save_users(users)
+            return user
+
+    return None
