@@ -56,3 +56,14 @@ def update_user(user_id, name=None, email=None):
             return user
 
     return None
+
+# delete user
+def delete_user(user_id):
+    users = get_all_users()
+    for user in users:
+        if user['id'] == user_id:
+            users.remove(user)
+            save_users(users)
+            return True
+
+    return False

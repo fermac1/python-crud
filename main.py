@@ -1,5 +1,5 @@
 from services.user_service import (
-    get_all_users, get_user_by_id, create_user, update_user
+    get_all_users, get_user_by_id, create_user, update_user, delete_user
 )
 
 def menu():
@@ -7,7 +7,8 @@ def menu():
     print('2. Get user by id')
     print('3. Create user')
     print('4. Update user')
-    print('5. Exit')
+    print('5. Delete user')
+    print('6. Exit')
 
 while True:
     menu()
@@ -43,6 +44,14 @@ while True:
             print('User not found')
     
     elif option == "5":
+        user_id = int(input('Enter user id: '))
+        deleted = delete_user(user_id)
+        if deleted:
+            print('user deleted successfully')
+        else:
+            print('User not found')
+
+    elif option == "6":
         break
 
     else:
